@@ -7,7 +7,7 @@ pip install -r requirements.txt
 
 ### Для запуска выполните
 ```shell
-python flappy.py
+python flappy_ai.py
 ```
 
 ### Функции активации
@@ -40,4 +40,5 @@ def single_jump(x, derivative=False):
 - [Нейросеть.Основы](https://www.youtube.com/watch?v=kxXHYCVrnxk&ab_channel=MyGap)
 - [Как обучаются нейросети](https://www.youtube.com/watch?v=c89HzsRI0Sg&ab_channel=MyGap)
 - [Как работает генетический алгоритм](https://habr.com/ru/post/498914/)
-- [Документация NeatPython](https://neat-python.readthedocs.io/en/latest/)
+- [Код](https://github.com/zavu1on/flappy-ai-2.0)
+- [Notion](https://www.notion.so/zavulon/Flappy-AI-acdc062c83a74f1483fdb777d138a555)
