@@ -80,7 +80,17 @@ class Bird:
 
         # анимируем птичку
         # todo
-        # заставить птичку махать крыльями
+        if self.anim_count <= self.ANIM_TIME:
+            self.img = BIRD_SPRITES[0]
+        elif self.anim_count <= self.ANIM_TIME * 2:
+            self.img = BIRD_SPRITES[1]
+        elif self.anim_count <= self.ANIM_TIME * 3:
+            self.img = BIRD_SPRITES[2]
+        elif self.anim_count <= self.ANIM_TIME * 4:
+            self.img = BIRD_SPRITES[1]
+        elif self.anim_count == self.ANIM_TIME * 4 + 1:
+            self.img = BIRD_SPRITES[0]
+            self.anim_count = 0
 
         # если птичка падает, делаем картинку статичной
         if self.deg <= -80:
